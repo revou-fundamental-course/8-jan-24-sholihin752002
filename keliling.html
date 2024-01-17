@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Katik Persegi</title>
+</head>
+<body>
+    <header>
+        <h1><B>KATIK</B>kalkulator matematika</h1>
+        <div class="hirarki">
+            <h4>Welcome to kalkulator luas dan keliling persegi</h4>
+                <P>Web ini digunakan untuk menghitung luas dan keliling persegi dalam menyelesaikan mini bootcamp RevoU</P>
+        </div>
+    </header>
+
+
+    <nav>
+        <select id="calculationType" onchange="redirectToSelectedFile()">
+            <option value="keliling.html">Keliling Persegi</option>
+            <option value="luas.html">Luas Persegi</option>
+        </select>
+    </nav>
+
+
+    <aside>
+        <div>
+        <section>
+            <img src="https://awsimages.detik.net.id/community/media/visual/2022/08/16/bujur-sangkar.jpeg?w=1037" alt="Girl in a jacket" width="300" height="300">
+            <p><b>Rumus Keliling Persegi Yaitu :</b> </p>
+            <p>K = 4 X S</p>
+            <P><b>Dimana:</b></P>
+            <ul>
+                <li>K = Keliling</li>
+                <li>S = Sisi</li>
+            </ul>  
+        </section>
+            <div clas="tabelCalkulator">
+                <label for="kelilingSide" id="lebelKelilingSide">Hitung Keliling Persegi :</label>
+                <input type="number" placeholder="Masukkan Sisinya"id="kelilingSide">
+            
+                <div class="buttons">
+                    <button onclick="calculatePerimeter()">Hitung</button>
+                <div   div class="result">
+                    <p id="sideLengthInfo">Panjang Sisi :</p>
+                    <p id="areaFormula">Rumus :</p>
+                    <p id="areaResultKeliling">Keliling Persegi :</p>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </aside>
+    
+</body>
+</html>
